@@ -1,0 +1,254 @@
+[ 2020-05-20T08:45:40+08:00 ] 222.204.218.201 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2020-05-20T08:45:40+08:00 ] 222.204.218.201 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2020-05-20T08:45:48+08:00 ] 222.204.218.201 /audit/index.php/Home/Login/verify/1589935553199
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2020-05-20T08:45:52+08:00 ] 222.204.218.201 /audit/index.php/Home/Login/login_val
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin` WHERE `user_name` = 'admin' AND `password` = 'ae6c87fe' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2020-05-20T08:45:52+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2020'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0006s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='37' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='34' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='37' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='39' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='37' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='36' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='23' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='37' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='36' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='39' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='23' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='36' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='38' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='38' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT `item_id`,`item_name` FROM `item` WHERE `item_state` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2020-05-20T08:46:15+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/context_edit?id=1330
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `contract` WHERE `id` = '1330' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='36' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT `item_id`,`item_name`,`item_supervisor` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2020-05-20T09:04:09+08:00 ] 180.167.231.142 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2020'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='37' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='34' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='37' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='39' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='37' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='36' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='23' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='37' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='36' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='39' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='23' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='36' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='35' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='38' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='38' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT `item_id`,`item_name` FROM `item` WHERE `item_state` = 0  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2020-05-20T09:10:15+08:00 ] 180.167.231.142 /audit/index.php/Home/Index/pp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+
+[ 2020-05-20T09:10:15+08:00 ] 180.167.231.142 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2020-05-20T09:10:15+08:00 ] 180.167.231.142 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2020-05-20T09:11:20+08:00 ] 42.236.10.75 /audit/index.php/Home/Index/pp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+
+[ 2020-05-20T09:11:21+08:00 ] 42.236.10.75 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2020-05-20T09:11:23+08:00 ] 42.236.10.75 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+

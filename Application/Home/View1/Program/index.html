@@ -1,0 +1,231 @@
+﻿<include file="Public/_meta" />
+
+<body>
+    <include file="Public/_header" />
+    <!--_menu 作为公共模版分离出去-->
+    <aside class="Hui-aside">
+        <div class="menu_dropdown bk_2">
+            <foreach name="time_list" item="v">
+                <if condition="$v eq $count_year">
+                    <dl>
+                        <a href="__MODULE__/program/index?year={$v}"><dt>{$v}年工程项目审核情况表</dt></a>
+                    </dl>
+                    <else />
+                    <dl>
+                        <a href="__MODULE__/program/index?year={$v}"><dt>{$v}年工程项目审核情况表</dt></a>
+                    </dl>
+                </if>
+            </foreach>
+        </div>
+    </aside>
+    <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 工程审核 <span class="c-gray en">&gt;</span> {$count_year}年工程项目审核情况表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <div class="cl pd-5 bg-1 bk-gray mt-10">
+                    <span class="l">
+                        <a title="添加工程项目" href="javascript:;" onclick="program_add('添加项目','__MODULE__/program/program_add?year={$count_year}')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe604;</i> 添加项目</a>
+                        <a title="导出当前表格" href="__MODULE__/Program/audit_out_1?year={$count_year}" class="btn btn-secondary radius"><i class="Hui-iconfont">&#xe644;</i> 导出当前表格</a>
+                        <a title="批量导出报告" href="javascript:;" onclick="outlist1()" class="btn_end btn btn-secondary radius"><i class="Hui-iconfont">&#xe615;</i> 批量导出报告</a>
+                        <a title="导出签到簿" href="javascript:;" onclick="outlist()" class="btn_end btn btn-success radius"><i class="Hui-iconfont">&#xe60c;</i> 导出签到簿</a>
+                    </span>
+                    <span class="r">共有数据：<strong>{:count($list)}</strong> 条</span>
+                </div>
+                <div class="mt-20">
+                    <table class="table table-border table-bordered table-hover table-bg table-sort">
+                        <thead>
+                            <tr class="text-c">
+                                <th width="25"><input type="checkbox" name="" value=""></th>
+                                <th width="50">序号</th>
+                                <th width="120">工程名称</th>
+                                <th width="70">送审日期</th>
+                                <th width="70">完成日期</th>
+                                <th width="80">文号</th>
+                                <th width="80">建设单位</th>
+                                <th width="80">施工单位</th>
+                                <th width="80">原决算额</th>
+                                <th width="80">审定金额</th>
+                                <th width="80">核减额</th>
+                                <th width="80">核减率</th>
+                                <th width="80">甲方审价费</th>
+                                <th width="80">乙方审价费</th>
+                                <th width="100">实际收用甲方</th>
+                                <th width="70">审核员</th>
+                                <th width="50">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <foreach name="list" item="v">
+                                <tr class="text-c">
+                                    <td><input type="checkbox" value="{$v.num}" itid="{$v.id}" name="audit_id"></td>
+                                    <td>{$v.num}</td>
+                                    <td>{$v.item_name}</td>
+                                    <td>{$v.vote_time}</td>
+                                    <td>{$v.finish_time}</td>
+                                    <td>{$v.symbol}</td>
+                                    <td>{$v.build_unit}</td>
+                                    <td>{$v.constroct_unit}</td>
+                                    <td>{$v.inital_money}</td>
+                                    <td>{$v.audit_money}</td>
+                                    <td>{$v.assess_money}</td>
+                                    <td>{$v.rate}</td>
+                                    <td>{$v.trial_a}</td>
+                                    <td>{$v.trial_b}</td>
+                                    <td>{$v.trial_a_rel}</td>
+                                    <td>{$v.assessor}</td>
+                                    <td class="td-manage">
+                                        <a title="编辑" href="javascript:;" onclick="program_add('修改密码','__MODULE__/program/program_edit?id={$v.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                                        <a title="导出报告" href="__MODULE__/program/audit_out_3?idstr={$v.id}" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe644;</i></a>
+                                    </td>
+                                </tr>
+                            </foreach>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </section>
+    <div id="abc"></div>
+    <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius">
+                <div class="modal-header">
+                    <h3 class="modal-title">生成报告</h3>
+                    <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                </div>
+                <div class="modal-body">
+                    <p id="modal_content">确认要生成序号为 的报告吗？</p>
+                    <div class="row cl mt-20">
+                        <label class="form-label col-sm-1" style="padding-right: 0px; margin-top: 3px;"><strong>抄送:</strong></label>
+                        <div class="formControls col-sm-5">
+                            <span class="select-box radius">
+                                <select name="抄送" class="select">
+                                    <option value="财务处">财务处</option>
+                                    <option value="基建部">基建部</option>
+                                </select>
+                            </span>
+                        </div>
+                        <label class="form-label col-sm-1 mt-3" style="padding-right: 0px; margin-top: 3px;"><strong>打字:</strong></label>
+                        <div class="formControls col-sm-5">
+                            <span class="select-box radius">
+                                <select name="contract_nature" class="select">
+                                    <option value="李晓">李晓</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="__MODULE__/program" class="btn btn-primary radius">确定</a>
+                    <button class="btn radius" data-dismiss="modal" aria-hidden="true">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    window.onload = function() //用window的onload事件，窗体加载完毕的时候
+    {
+        if (localStorage.getItem("flag") == 0) {
+            var toppx = localStorage.getItem('toppx');
+            $(".Hui-article").scrollTop(toppx);
+            localStorage.removeItem('flag');
+        } else if (localStorage.getItem("flag") == 1) {
+            var toppx = $('.Hui-article')[0].scrollHeight;
+            $(".Hui-article").scrollTop(toppx);
+            localStorage.removeItem('flag');
+        }
+    }
+    /*记录滚动条*/
+    function note() {
+        var res = $('.Hui-article').scrollTop();
+        localStorage.setItem('toppx', res);
+    }
+    $(function() {
+        $('.table-sort').dataTable({
+            'paging': false,
+            "ordering": false,
+            "aaSorting": [
+                [1, "asc"]
+            ], //默认第几个排序
+            "bStateSave": true, //状态保存
+            "aoColumnDefs": [
+                // {"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+                { "orderable": false, "aTargets": [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] } // 制定列不参与排序
+            ]
+        });
+        $('.table-sort tbody').on('click', 'tr', function() {
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            } else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        });
+    });
+
+    function outlist1() {
+        var chk_value = [];
+        var chk_value1 = [];
+        $('input[name="audit_id"]:checked').each(function() {
+            chk_value.push($(this).val());
+            chk_value1.push($(this).attr('itid'));
+        });
+        if (chk_value.length > 0) {
+            layer.confirm('确认要生成序号为 ' + chk_value + ' 的报告吗？', function(index) {
+                var string = "__MODULE__/program/audit_out_3?idstr=" + chk_value1;
+                window.location.href = string;
+                layer.msg('生成成功!', { icon: 1, time: 1000 });
+            });
+        } else {
+            layer.msg('未选择需要生成的报告', { icon: 2, time: 1000 });
+        }
+    }
+    /*项目-添加*/
+    function program_add(title, url) {
+        note();
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+    /*付款-编辑*/
+    function list_edit(title, url, w, h) {
+        layer_show(title, url, w, h);
+    }
+    $(".edit").click(function() {
+        var contract_id = $(this).parent().parent().find('.co_id').text();
+        var string = '__MODULE__/Index/list_edit' + '?contract_id=' + contract_id;
+        list_edit('付款情况', string, '', '510');
+    });
+    /*添加总表*/
+    function list_add(title, url, id, w, h) {
+        layer_show(title, url, w, h);
+    }
+    //批量删除
+    function outlist() {
+        var chk_value = [];
+        var chk_value1 = [];
+        $('input[name="audit_id"]:checked').each(function() {
+            chk_value.push($(this).val());
+            chk_value1.push($(this).attr('itid'));
+        });
+        if (chk_value.length > 0) {
+            layer.confirm('确认要生成序号为 ' + chk_value + ' 的签到簿吗？', function(index) {
+                var string = "__MODULE__/program/audit_out_2?idstr=" + chk_value1;
+                window.location.href = string;
+                layer.msg('生成成功!', { icon: 1, time: 1000 });
+            });
+        } else {
+            layer.msg('未选择需要生成的报告', { icon: 2, time: 1000 });
+        }
+    }
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

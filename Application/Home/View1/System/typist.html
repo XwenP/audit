@@ -1,0 +1,87 @@
+﻿<include file="Public/_meta" />
+
+<body>
+    <include file="Public/_header" />
+    <!--_menu 作为公共模版分离出去-->
+    <aside class="Hui-aside">
+        <div class="menu_dropdown bk_2">
+            <dl>
+                <dt><a href="__MODULE__/System/index" style="text-decoration:none;"><i class="Hui-iconfont">&#xe72d;&nbsp;</i> 分表项目管理</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="__MODULE__/System/checker" style="text-decoration:none;"><i class="Hui-iconfont">&#xe62d;&nbsp;</i> 审核员管理</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="__MODULE__/System/admin" style="text-decoration:none;"><i class="Hui-iconfont">&#xe62b;&nbsp;</i> 管理员账号管理</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="__MODULE__/System/typist" style="text-decoration:none; color:#148cf1;"><i class="Hui-iconfont">&#xe70c;&nbsp;</i> 打字员管理</a></dt>
+            </dl>
+        </div>
+    </aside>
+    <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 系统管理 <span class="c-gray en">&gt;</span> 打字员管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <div class="cl pd-5 bg-1 bk-gray mt-10">
+                    <span class="l">
+                        <a href="javascript:;" onclick="list_add('添加打字员','__MODULE__/System/typist_add','','400','200')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe644;</i> 添加打字员</a>
+                    </span>
+                    <span class="r">共有数据：<strong>{:count($data)}</strong> 条</span>
+                </div>
+                <div class="mt-20">
+                    <table class="table table-border table-bordered table-hover table-bg table-sort">
+                        <thead>
+                            <tr class="text-c">
+                                <th width="80">打字员</th>
+                                <th width="80">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <foreach name="data" item="v">
+                            <tr class="text-c">
+                                <td>{$v.name}</td>
+                                <td class="td-manage">
+                                    <a title="删除" href="javascript:;" onclick="typist_del({$v.id})" class="ml-5 delete" style="text-decoration:none" ><i class="Hui-iconfont">&#xe6e2;</i></a>
+                                </td>
+                            </tr>
+                            </foreach>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </section>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    var index = parent.layer.getFrameIndex(window.name);
+    /*添加总表*/
+    function list_add(title, url, id, w, h) {
+        layer_show(title, url, w, h);
+    }
+    function typist_del(id){
+        layer.confirm('确定删除?', function(index) {
+            $.ajax({
+                type: 'POST',
+                url: "__CONTROLLER__ /typist_del",
+                data: "id=" + id,
+                cache: false,
+                success: function(data) {
+                    var obj = eval('(' + data + ')');
+                    if (obj.result == '400') {
+                        layer.msg('删除失败!', { icon: 1, time: 1000 });
+                    } else if (obj.result == '200') {
+                        layer.msg('删除成功!', { icon: 0, time: 1000 });
+                        window.parent.location.reload();
+                        parent.layer.close(index);
+                    }
+                }
+            });
+        });
+    }
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

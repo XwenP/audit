@@ -1,0 +1,2216 @@
+[ 2019-06-17T09:48:43+08:00 ] 180.167.231.142 /audit/index.php/Home/Index/list_show?item_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+
+[ 2019-06-17T09:48:43+08:00 ] 180.167.231.142 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2019-06-17T09:48:43+08:00 ] 180.167.231.142 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2019-06-17T09:48:55+08:00 ] 180.167.231.142 /audit/index.php/Home/Login/login_val
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin` WHERE `user_name` = 'admin' AND `password` = 'ae6c87fe' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-06-17T09:48:56+08:00 ] 180.167.231.142 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2019'  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='17' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2019-06-17T09:48:57+08:00 ] 180.167.231.142 /audit/index.php/Home/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2019-06-17T09:50:39+08:00 ] 180.167.231.142 /audit/index.php/Home/Index/list_show?item_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `item_id` = '6'  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0004s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-4' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-13' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-40' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-41' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-42' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-43' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-57' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-59' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-84' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-19' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-20' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-24' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-30' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-87' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-111' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-112' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-139' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-142' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-145' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-148' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-149' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-157' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-158' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-160' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-165' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-14' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-18' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-19' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-20' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-28' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-39' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+SQL: SELECT `item_id`,`item_supervisor`,`item_name`,`su_company` FROM `item` WHERE `item_id` = '6' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2019-06-17T09:51:39+08:00 ] 42.236.10.117 /audit/index.php/Home/Index/list_show?item_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+
+[ 2019-06-17T09:51:45+08:00 ] 42.236.10.117 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2019-06-17T09:51:56+08:00 ] 42.236.10.117 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2019-06-17T09:52:00+08:00 ] 180.163.220.66 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+
+[ 2019-06-17T09:52:12+08:00 ] 180.163.220.66 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2019-06-17T09:55:24+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_editremark?contract_id=2017-4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT `contract_id`,`contract_remarks` FROM `contract` WHERE `contract_id` = '2017-4' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2019-06-17T09:57:05+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_editremark?contract_id=2017-4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT `contract_id`,`contract_remarks` FROM `contract` WHERE `contract_id` = '2017-4' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2019-06-17T09:57:07+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_editextra?contract_id=2017-4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0008s ]
+SQL: SELECT `contract_id`,`contract_remarks_extra` FROM `contract` WHERE `contract_id` = '2017-4' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2019-06-17T09:57:10+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_edit?contract_id=2017-4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `contract` WHERE `contract_id` = '2017-4' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0004s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-4' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined offset: 0 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 49 行.
+NOTIC: [8] Undefined offset: 0 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 50 行.
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 60 行.
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 61 行.
+NOTIC: [8] Undefined offset: 2 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 71 行.
+NOTIC: [8] Undefined offset: 2 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2019-06-17T09:58:48+08:00 ] 42.236.10.84 /audit/index.php/home/index/list_editremark?contract_id=2017-4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+
+[ 2019-06-17T09:58:55+08:00 ] 42.236.10.84 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2019-06-17T09:59:06+08:00 ] 42.236.10.84 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2019-06-17T09:59:39+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_edit?contract_id=2017-4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `contract_id` = '2017-4' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0004s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-4' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined offset: 0 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 49 行.
+NOTIC: [8] Undefined offset: 0 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 50 行.
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 60 行.
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 61 行.
+NOTIC: [8] Undefined offset: 2 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 71 行.
+NOTIC: [8] Undefined offset: 2 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2019-06-17T10:02:18+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_show?item_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `contract` WHERE `item_id` = '8'  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0004s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-8' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-19' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-20' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-24' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-28' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-29' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-30' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-31' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-35' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-96' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-115' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-147' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-11' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-14' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-15' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-16' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-30' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-34' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-56' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-57' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-69' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-70' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-71' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-91' )  [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-94' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-95' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-96' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-97' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-115' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-117' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-118' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-131' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-6' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-7' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-8' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-14' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-15' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-28' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-29' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-50' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-61' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-68' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-77' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-78' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-2' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-29' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-66' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-75' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-76' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-99' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-103' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-109' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-122' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-150' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-164' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-171' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-10' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-13' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-15' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-22' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-23' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0006s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+SQL: SELECT `item_id`,`item_supervisor`,`item_name`,`su_company` FROM `item` WHERE `item_id` = '8' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2019-06-17T10:02:36+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_edit?contract_id=2019-22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `contract_id` = '2019-22' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0004s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-22' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 60 行.
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 61 行.
+NOTIC: [8] Undefined offset: 2 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 71 行.
+NOTIC: [8] Undefined offset: 2 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2019-06-17T10:02:39+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_edit1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT `contract_amount`,`contract_exact_amount` FROM `contract` WHERE `contract_id` = '2019-22' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `contract` SET `contract_amount`='81342.29',`contract_exact_amount`='',`contract_add_money`='77275.00',`contract_balance`='4067.28',`ratio`='5%' WHERE `contract_id` = '2019-22' [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0006s ]
+SQL: UPDATE `paylist` SET `pay_amount`='77275.00',`pay_time`='2019.3.14',`ratio`='95%',`vote_time`='2019-06-17  10:02:39' WHERE `id` = '187' [ RunTime:0.0051s ]
+
+[ 2019-06-17T10:02:39+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_show?item_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `contract` WHERE `item_id` = '8'  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0006s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-8' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-19' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-20' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-24' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-28' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-29' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-30' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-31' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-35' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-96' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-115' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-147' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-11' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-14' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-15' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-16' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-30' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-34' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-56' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-57' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-69' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-70' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-71' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-91' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-94' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-95' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-96' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-97' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-115' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-117' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-118' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-131' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-6' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-7' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-8' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-14' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-15' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-28' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-29' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-50' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-61' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-68' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-77' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-78' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-2' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-29' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-66' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-75' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-76' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-99' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-103' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-109' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-122' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-150' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-164' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-171' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-10' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-13' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-15' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-22' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-23' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+SQL: SELECT `item_id`,`item_supervisor`,`item_name`,`su_company` FROM `item` WHERE `item_id` = '8' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2019-06-17T10:03:10+08:00 ] 42.236.10.125 /audit/index.php/home/index/list_edit?contract_id=2017-4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+
+[ 2019-06-17T10:03:19+08:00 ] 42.236.10.125 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2019-06-17T10:03:44+08:00 ] 42.236.10.114 /audit/index.php/home/index/list_edit?contract_id=2017-4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+
+[ 2019-06-17T10:03:55+08:00 ] 42.236.10.114 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2019-06-17T10:04:11+08:00 ] 42.236.10.114 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2019-06-17T10:04:56+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_edit?contract_id=2019-23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `contract_id` = '2019-23' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0004s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-23' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 60 行.
+NOTIC: [8] Undefined offset: 1 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 61 行.
+NOTIC: [8] Undefined offset: 2 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 71 行.
+NOTIC: [8] Undefined offset: 2 /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/70cdc971b96f4f21a57bb29e584e50ba.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2019-06-17T10:04:58+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_edit1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT `contract_amount`,`contract_exact_amount` FROM `contract` WHERE `contract_id` = '2019-23' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `contract` SET `contract_amount`='48891.44',`contract_exact_amount`='',`contract_add_money`='48891.44',`contract_balance`='0.00',`ratio`='0%' WHERE `contract_id` = '2019-23' [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0004s ]
+SQL: UPDATE `paylist` SET `pay_amount`='48891.44',`pay_time`='2019.04.04',`ratio`='100%',`vote_time`='2019-06-17  10:04:58' WHERE `id` = '188' [ RunTime:0.0041s ]
+
+[ 2019-06-17T10:04:58+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_show?item_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `item_id` = '8'  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0004s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-8' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-19' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-20' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-24' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-28' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-29' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-30' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-31' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-35' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-96' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-115' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2015-147' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-11' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-14' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-15' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-16' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-30' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-34' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-56' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-57' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-69' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-70' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-71' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-91' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-94' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-95' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-96' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-97' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-115' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-117' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-118' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2016-131' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-6' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-7' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-8' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-14' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-15' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-28' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-29' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-50' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-61' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-68' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-77' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-78' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-2' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-29' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-66' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-75' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-76' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-99' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-103' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-109' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-122' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-150' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-164' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-171' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-10' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-13' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-15' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-22' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-23' )  [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+SQL: SELECT `item_id`,`item_supervisor`,`item_name`,`su_company` FROM `item` WHERE `item_id` = '8' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2019-06-17T10:11:43+08:00 ] 222.204.218.201 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `item` ORDER BY item_id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2019-06-17T10:11:43+08:00 ] 222.204.218.201 /audit/index.php/Home/System/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2019-06-17T10:11:52+08:00 ] 222.204.218.201 /audit/index.php/Home/System/item_edit?item_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `item` WHERE `item_id` = '6' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2019-06-17T10:12:15+08:00 ] 222.204.218.201 /audit/index.php/Home/System/item_save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: UPDATE `item` SET `item_name`='松江校区工程训练中心改扩建工程',`item_supervisor`='沈万军',`su_company`='上海中世建设咨询有限公司' WHERE `item_id` = '6' [ RunTime:0.0050s ]
+
+[ 2019-06-17T10:12:18+08:00 ] 222.204.218.201 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `item` ORDER BY item_id desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2019-06-17T10:12:26+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2019'  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='17' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2019-06-17T10:12:31+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/list_show?item_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `contract` WHERE `item_id` = '6'  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `paylist` [ RunTime:0.0005s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-4' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-13' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-40' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-41' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-42' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-43' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-57' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-59' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2017-84' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-19' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-20' )  [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-24' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-30' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-87' )  [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-111' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-112' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-139' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-142' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-145' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-148' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-149' )  [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-157' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-158' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-160' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2018-165' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-14' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-18' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-19' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-20' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-28' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `vote_time`,`pay_amount`,`id`,`pay_time`,`ratio` FROM `paylist` WHERE ( 1=1 AND contract_id='2019-39' )  [ RunTime:0.0003s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+SQL: SELECT `item_id`,`item_supervisor`,`item_name`,`su_company` FROM `item` WHERE `item_id` = '6' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+NOTIC: [8] Undefined variable: count_year /www/wwwroot/dhuyb.cn/audit/Application/Runtime/Cache/Home/953824c20aef53ae2750e20ed86d0cd1.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2019-06-17T10:13:38+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/index?year=2019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2019'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='17' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2019-06-17T10:14:03+08:00 ] 222.204.218.201 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `item` ORDER BY item_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2019-06-17T10:14:10+08:00 ] 222.204.218.201 /audit/index.php/Home/System/item_edit?item_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `item` WHERE `item_id` = '7' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2019-06-17T10:14:27+08:00 ] 222.204.218.201 /audit/index.php/Home/System/item_save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: UPDATE `item` SET `item_name`='松江校区新建研究生公寓',`item_supervisor`='王方',`su_company`='上海沪港建设咨询有限公司' WHERE `item_id` = '7' [ RunTime:0.0069s ]
+
+[ 2019-06-17T10:14:29+08:00 ] 222.204.218.201 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `item` ORDER BY item_id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2019-06-17T10:14:31+08:00 ] 222.204.218.201 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `item` ORDER BY item_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2019-06-17T10:14:33+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2019'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='17' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2019-06-17T10:14:43+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/context_edit?id=1291
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `id` = '1291' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name`,`item_supervisor` FROM `item`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2019-06-17T10:14:55+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/contract_save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: UPDATE `contract` SET `item_id`='7',`contract_id`='2019-42',`contract_name`='松江校区新建研究生公寓场地平整、垃圾清运合同',`contract_unit`='上海沧达工程建设有限公司',`contract_nature`='施工类',`contract_amount`='299800',`contract_date`='',`contract_remarks`='预付款50%，结算审计后支付审定金额97%，保修期两年除防水部分的保修款外全部付清（防水保修期为五年）',`contract_remarks_extra`='',`contract_last_time`='2019-06-17 10:14:55',`total_invest`='undefined',`item_supervisor`='万世',`jian_fee`='undefined',`budget_amount`='undefined',`limit_price`='undefined',`item_type`='undefined' WHERE `id` = '1291' [ RunTime:0.0080s ]
+
+[ 2019-06-17T10:15:05+08:00 ] 42.236.10.78 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+
+[ 2019-06-17T10:15:08+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2019'  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='17' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0003s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2019-06-17T10:15:13+08:00 ] 42.236.10.78 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2019-06-17T10:15:13+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/context_edit?id=984
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `id` = '984' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name`,`item_supervisor` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2019-06-17T10:15:21+08:00 ] 42.236.10.78 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2019-06-17T10:15:32+08:00 ] 180.163.220.3 /audit/index.php/home/system/item_edit?item_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+
+[ 2019-06-17T10:15:40+08:00 ] 180.163.220.3 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2019-06-17T10:15:45+08:00 ] 180.163.220.3 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+
+[ 2019-06-17T10:16:00+08:00 ] 180.163.220.66 /audit/index.php/home/system/item_edit?item_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+
+[ 2019-06-17T10:16:09+08:00 ] 180.163.220.66 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2019-06-17T10:17:07+08:00 ] 222.204.218.201 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `item` ORDER BY item_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2019-06-17T10:17:10+08:00 ] 222.204.218.201 /audit/index.php/Home/System/checker
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `check` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `check`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2019-06-17T10:17:15+08:00 ] 222.204.218.201 /audit/index.php/Home/System/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2019-06-17T10:20:03+08:00 ] 222.204.218.201 /audit/index.php/Home/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `item` ORDER BY item_id desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2019-06-17T10:20:14+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2019'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='17' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0003s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2019-06-17T10:20:15+08:00 ] 222.204.218.201 /audit/index.php/Home/Program/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `auditing` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `auditing` WHERE `bel_year` = '2019'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2019-06-17T10:20:15+08:00 ] 222.204.218.201 /audit/index.php/Home/Program/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2019-06-17T10:20:19+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2019'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='17' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2019-06-17T10:20:29+08:00 ] 42.236.10.84 /audit/index.php/Home/System/checker
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+
+[ 2019-06-17T10:20:35+08:00 ] 42.236.10.84 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2019-06-17T10:20:45+08:00 ] 42.236.10.93 /audit/index.php/Home/System/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+
+[ 2019-06-17T10:20:49+08:00 ] 42.236.10.84 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2019-06-17T10:20:49+08:00 ] 42.236.10.93 /audit/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2019-06-17T10:20:56+08:00 ] 42.236.10.93 /audit/index.php/Home/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2019-06-17T10:21:23+08:00 ] 222.204.218.201 /audit/index.php/Home/Program/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `auditing` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `auditing` WHERE `bel_year` = '2019'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2019-06-17T10:21:38+08:00 ] 222.204.218.201 /audit/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `contract` WHERE `belong_year` = '2019'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0004s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='17' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='8' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='9' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='11' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `item_supervisor`,`item_name`,`su_company` FROM `item` WHERE ( 1=1 AND item_id='7' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0003s ]
+SQL: SELECT `item_id`,`item_name` FROM `item`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2019-06-17T10:23:07+08:00 ] 222.204.218.201 /audit/index.php/Home/Program/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `auditing` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `auditing` WHERE `bel_year` = '2019'  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+

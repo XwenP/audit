@@ -1,0 +1,179 @@
+<include file="Public/_meta" />
+</head>
+
+<body>
+    <div id="year" year="{$data.bel_year}" itid="{$data.id}" style="display: none"></div>
+    <div class="page-container">
+        <div class="form form-horizontal" id="form-article-add">
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>序号：</strong></label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.num}" placeholder="" id="" name="num">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>工程名称：</strong></label>
+                <div class="formControls col-xs-6 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.item_name}" placeholder="" id="" name="item_name">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>送审日期：</strong></label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.vote_time}" placeholder="" id="" name="vote_time">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>完成日期：</strong></label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.finish_time}" placeholder="" id="" name="finish_time">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>文号：</strong></label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.symbol}" placeholder="" id="" name="symbol">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>建设单位：</strong></label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.build_unit}" placeholder="" id="" name="build_unit">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>施工单位：</strong></label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.constroct_unit}" placeholder="" id="" name="constroct_unit">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>原决算额：</strong></label>
+                <div class="formControls col-xs-8 col-sm-4">
+                    <input type="text" class="input-text" value="{$data.inital_money}" placeholder="" id="" name="inital_money">
+                </div>
+                <label class="form-label col-xs-4 col-sm-1"><strong>审定金额：</strong></label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text" value="{$data.audit_money}" placeholder="" id="" name="audit_money">
+                </div>
+                <div class="btn btn-success radius col-sm-1 calcu">计算审价费</div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>核减额：</strong></label>
+                <div class="formControls col-xs-8 col-sm-4">
+                    <input type="text" class="input-text" value="{$data.assess_money}" placeholder="" id="" name="assess_money">
+                </div>
+                <label class="form-label col-xs-4 col-sm-1"><strong>核减率：</strong></label>
+                <div class="formControls col-xs-8 col-sm-4">
+                    <input type="text" class="input-text" value="{$data.rate}" placeholder="" id="" name="rate">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>甲方审价费：</strong></label>
+                <div class="formControls col-xs-8 col-sm-4">
+                    <input type="text" class="input-text" value="{$data.trial_a}" placeholder="" id="" name="trial_a">
+                </div>
+                <label class="form-label col-xs-4 col-sm-1"><strong>乙方审价费：</strong></label>
+                <div class="formControls col-xs-8 col-sm-4">
+                    <input type="text" class="input-text" value="{$data.trial_b}" placeholder="" id="" name="trial_b">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>实际收用甲方：</strong></label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="{$data.trial_a_rel}" placeholder="" id="" name="trial_a_rel">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><strong>审核员：</strong></label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <span class="select-box">
+                        <select name="assessor" class="select" id="select_class">
+                            <foreach name="list" item="v">
+                                <if condition="$v.abbreviation eq $data['assessor']">
+                                    <option selected="selected" value="{$v.abbreviation}">{$v.abbreviation}</option>
+                                    <else />
+                                    <option value="{$v.abbreviation}">{$v.abbreviation}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="row cl">
+                <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                    <button class="btn btn-primary radius submit" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+                    <button id="quxiao" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    $('input:not([autocomplete]').attr('autocomplete', 'off'); 
+    var index = parent.layer.getFrameIndex(window.name); //获取当前窗体索引
+    $('#quxiao').on('click', function() {
+        parent.layer.close(index); //执行关闭
+    });
+    $(".submit").on('click', function() {
+        var id = $('#year').attr('itid');
+        var year = $('#year').attr('year');
+        var num = $("input[name='num']").val();
+        var item_name = $("input[name='item_name']").val();
+        var vote_time = $("input[name='vote_time']").val();
+        var finish_time = $("input[name='finish_time']").val();
+        var symbol = $("input[name='symbol']").val();
+        var build_unit = $("input[name='build_unit']").val();
+        var constroct_unit = $("input[name='constroct_unit']").val();
+        var inital_money = $("input[name='inital_money']").val();
+        var audit_money = $("input[name='audit_money']").val();
+        var assess_money = $("input[name='assess_money']").val();
+        var trial_a = $("input[name='trial_a']").val();
+        var trial_b = $("input[name='trial_b']").val();
+        var trial_a_rel = $("input[name='trial_a_rel']").val();
+        var assessor = $("select[name='assessor']").val();
+        var rate = $("input[name='rate']").val();
+        $.ajax({
+            type: "POST",
+            url: "__CONTROLLER__/program_save",
+            data: "year=" + year + "&id=" + id + "&num=" + num + "&vote_time=" + vote_time + "&item_name=" + item_name + "&finish_time=" + finish_time + "&symbol=" + symbol + "&build_unit=" + build_unit + "&constroct_unit=" + constroct_unit + "&inital_money=" + inital_money + "&audit_money=" + audit_money + "&assess_money=" + assess_money + "&trial_a=" + trial_a + "&trial_b=" + trial_b + "&trial_a_rel=" + trial_a_rel + "&assessor=" + assessor + "&rate=" + rate,
+            cache: false, //不缓存此页面   
+            success: function(data) {
+                var obj = eval('(' + data+ ')');
+                if(obj.result == '400'){
+                    alert("保存出错！");
+                }else if(obj.result == '200'){
+                    localStorage.setItem('flag', 0);
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+                }
+            }
+        });
+    });
+    $('.calcu').click(function(){
+        var inital_money = $("input[name='inital_money']").val();
+        var audit_money = $("input[name='audit_money']").val();
+        $.ajax({
+            type: "POST",
+            url: "__CONTROLLER__/program_calculate",
+            data: "inital_money=" + inital_money + "&audit_money=" + audit_money,
+            cache: false, //不缓存此页面   
+            success: function(data) {
+                var obj = eval('(' + data+ ')');
+                if(obj.data == '400'){
+                    alert("计算出现未知错误，请重新再试");
+                }else if(obj.data == '200'){
+                    $("input[name='trial_a']").val(obj.trial_a);
+                    $("input[name='trial_b']").val(obj.trial_b);
+                    $("input[name='trial_a_rel']").val(obj.trial_a_rel);
+                    $("input[name='assess_money']").val(obj.balance);
+                    $("input[name='rate']").val(obj.nuclear_rate);
+                }
+            }
+        });
+    })
+    </script>
+</body>
+
+</html>

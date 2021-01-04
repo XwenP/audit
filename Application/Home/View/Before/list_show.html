@@ -1,0 +1,395 @@
+<include file="Public/_meta" />
+
+<body>
+    <include file="Public/_header" />
+    <!--_menu 作为公共模版分离出去-->
+    <aside class="Hui-aside">
+        <div class="menu_dropdown bk_2">
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe636;</i> 总表管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <foreach name="time_list" item="v">
+                            <li><a href="__MODULE__/Before/index?year={$v}" title="{$v}年合同总表">{$v}年工程项目合同付款登记表</a></li>
+                        </foreach>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe623;</i> 分表管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd style="display: block;">
+                    <ul>
+                        <foreach name="item_list" item="v">
+                            <if condition="$v.item_id eq $data3['item_id']">
+                                <li class="current"><a href="__MODULE__/Before/list_show?item_id={$v.item_id}" title="{$v.item_name}">{$v.item_name}</a></li>
+                                <else />
+                                <li><a href="__MODULE__/Before/list_show?item_id={$v.item_id}" title="{$v.item_name}">{$v.item_name}</a></li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe70c;</i> 预付记录管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <foreach name="time_list" item="v">
+                            <if condition="$v eq $count_year">
+                                <li class="current"><a href="__MODULE__/Before/pay_show?year={$v}" title="{$v}年付款记录表">{$v}年付款记录表</a></li>
+                                <else />
+                                <li><a href="__MODULE__/Before/pay_show?year={$v}" title="{$v}年付款记录表">{$v}年付款记录表</a></li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </aside>
+    <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 分表 <span class="c-gray en">&gt;</span> {$data3.item_name} <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <div class="cl pd-5 bg-1 bk-gray mt-10">
+                    <span class="l">
+                        <a href="__MODULE__/Before/item_out?item_id={$data3.item_id}" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe644;</i> 导出分表</a>
+                        <a href="javascript:;" item_id="{$data3.item_id}" class="btn_end btn btn-success radius"><i class="Hui-iconfont">&#xe615;</i> 还原项目</a>
+                    </span>
+                    <span class="r">共有数据：<strong>{:count($data1)}</strong> 条</span>
+                </div>
+                <div class="mt-20">
+                    <table class="table table-border table-bordered table-hover1 table-bg table-sort">
+                        <thead>
+                            <tr>
+                                <th colspan="14">
+                                    <h5><strong>项目名称 ：{$data3.item_name}</strong></h5>
+                                    <h5><strong>投资监理 ：{$data3.item_supervisor}</strong></h5>
+                                    <h5><strong>投资监理单位 ：{$data3.su_company}</strong></h5>
+                                </th>
+                            </tr>
+                            <tr class="text-c">
+                                <th width="50">序号</th>
+                                <th width="100">项目名称</th>
+                                <th width="100">承包单位</th>
+                                <th width="60">合同性质</th>
+                                <th width="80">合同金额</th>
+                                <th width="80">审定金额</th>
+                                <th width="210" colspan="3">付款情况</th>
+                                <th width="">合同付款方式（备注）</th>
+                                <th width="200" colspan="4">备注</th>
+                            </tr>
+                        </thead>
+                        <foreach name="data1" item="v">
+                            <if condition="$v.contract_nature eq '招标代理' ">
+                                <tbody>
+                                    <notempty name="v['paylist'][0]">
+                                        <tr>
+                                            <td class="co_id" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_id}</td>
+                                            <td class="edit4" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_name}</td>
+                                            <td class="edit3" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_unit}</td>
+                                            <td class="edit2" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_nature}</td>
+                                            <td class="edit" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_amount}</td>
+                                            <td class="edit" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_exact_amount}</td>
+                                            <td width="70"><b>预付时间1</b></td>
+                                            <td width="80"><b>预付金额1</b></td>
+                                            <td width="60"><b>预付比例1</b></td>
+                                            <td rowspan="{:count($v['paylist'])*2+3}" class="remarks">{$v.contract_remarks}</td>
+                                            <td class="edit1" width="50"><b>总投资</b></td>
+                                            <notempty name="v.total_invest">
+                                                <td class="edit1" width="50">{$v.total_invest}</td>
+                                                <else />
+                                                <td class="edit1" width="50">-</td>
+                                            </notempty>
+                                            <td class="edit1" width="50"><b>建安费</b></td>
+                                            <notempty name="v.jian_fee">
+                                                <td class="edit1" width="50">{$v.jian_fee}</td>
+                                                <else />
+                                                <td class="edit1" width="50">-</td>
+                                            </notempty>
+                                        </tr>
+                                        <else />
+                                        <tr>
+                                            <td class="co_id" rowspan="5">{$v.contract_id}</td>
+                                            <td class="edit4" rowspan="5">{$v.contract_name}</td>
+                                            <td class="edit3" rowspan="5">{$v.contract_unit}</td>
+                                            <td class="edit2" rowspan="5">{$v.contract_nature}</td>
+                                            <td class="edit" rowspan="5">{$v.contract_amount}</td>
+                                            <td class="edit" rowspan="5">{$v.contract_exact_amount}</td>
+                                            <td width="70"><b>预付时间1</b></td>
+                                            <td width="80"><b>预付金额1</b></td>
+                                            <td width="60"><b>预付比例1</b></td>
+                                            <td rowspan="5" class="remarks">{$v.contract_remarks}</td>
+                                            <td class="edit1" width="50"><b>总投资</b></td>
+                                            <notempty name="v.total_invest">
+                                                <td class="edit1" width="50">{$v.total_invest}</td>
+                                                <else />
+                                                <td class="edit1" width="50">-</td>
+                                            </notempty>
+                                            <td class="edit1" width="50"><b>建安费</b></td>
+                                            <notempty name="v.jian_fee">
+                                                <td class="edit1" width="50">{$v.jian_fee}</td>
+                                                <else />
+                                                <td class="edit1" width="50">-</td>
+                                            </notempty>
+                                        </tr>
+                                    </notempty>
+                                    <tr>
+                                        <notempty name="v['paylist'][0]">
+                                            <td class="edit">{$v['paylist'][0]['pay_time']}</td>
+                                            <td class="edit">{$v['paylist'][0]['pay_amount']}</td>
+                                            <td class="edit">{$v['paylist'][0]['ratio']}</td>
+                                            <else />
+                                            <td class="edit">-</td>
+                                            <td class="edit">-</td>
+                                            <td class="edit">-</td>
+                                        </notempty>
+                                        <td class="edit1"><b>预算金额</b></td>
+                                        <notempty name="v.budget_amount">
+                                            <td class="edit1">{$v.budget_amount}</td>
+                                            <else />
+                                            <td class="edit1">-</td>
+                                        </notempty>
+                                        <td class="edit1"><b>控制价</b></td>
+                                        <notempty name="v.limit_price">
+                                            <td class="edit1">{$v.limit_price}</td>
+                                            <else />
+                                            <td class="edit1">-</td>
+                                        </notempty>
+                                    </tr>
+                                    <volist name="v['paylist']" id="vo" offset="1">
+                                        <tr>
+                                            <td><b>预付时间{$key+1}</b></td>
+                                            <td><b>预付金额{$key+1}</b></td>
+                                            <td><b>预付比例{$key+1}</b></td>
+                                            <if condition="$key eq 1">
+                                                <notempty name="v['paylist'][0]">
+                                                    <td class="remarks_extra" rowspan=" {:count($v['paylist'])*2+1}" colspan="4"> {$v.contract_remarks_extra}</td>
+                                                    <else />
+                                                    <td class="remarks_extra" rowspan="3" colspan="4"> {$v.contract_remarks_extra}</td>
+                                                </notempty>
+                                            </if>
+                                        </tr>
+                                        <tr>
+                                            <notempty name="vo">
+                                                <td class="edit">{$vo.pay_time}</td>
+                                                <td class="edit">{$vo.pay_amount}</td>
+                                                <td class="edit">{$vo.ratio}</td>
+                                                <else />
+                                                <td class="edit">-</td>
+                                                <td class="edit">-</td>
+                                                <td class="edit">-</td>
+                                            </notempty>
+                                        </tr>
+                                    </volist>
+                                    <tr>
+                                        <td><b>累计预付</b></td>
+                                        <notempty name="v.contract_add_money">
+                                            <td class="edit" colspan="2">{$v.contract_add_money}</td>
+                                            <else />
+                                            <td class="edit" colspan="2">-</td>
+                                        </notempty>
+                                        <empty name="v['paylist'][1]">
+                                            <td class="remarks_extra" rowspan="3" colspan="4"> {$v.contract_remarks_extra}</td>
+                                        </empty>
+                                    </tr>
+                                    <tr>
+                                        <td><b>余额</b></td>
+                                        <notempty name="v.contract_balance">
+                                            <td class="edit" colspan="2">{$v.contract_balance}</td>
+                                            <else />
+                                            <td class="edit" colspan="2">-</td>
+                                        </notempty>
+                                    </tr>
+                                    <tr>
+                                        <td><b>余额占比</b></td>
+                                        <notempty name="v.contract_balance">
+                                            <td class="edit" colspan="2">{$v.ratio}</td>
+                                            <else />
+                                            <td class="edit" colspan="2">-</td>
+                                        </notempty>
+                                    </tr>
+                                </tbody>
+                                <else />
+                                <tbody>
+                                    <notempty name="v['paylist'][0]">
+                                        <tr>
+                                            <td class="co_id" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_id}</td>
+                                            <td class="edit4" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_name}</td>
+                                            <td class="edit3" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_unit}</td>
+                                            <td class="edit2" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_nature}</td>
+                                            <td class="edit" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_amount}</td>
+                                            <td class="edit" rowspan="{:count($v['paylist'])*2+3}">{$v.contract_exact_amount}</td>
+                                            <td width="70"><b>预付时间1</b></td>
+                                            <td width="80"><b>预付金额1</b></td>
+                                            <td width="60"><b>预付比例1</b></td>
+                                            <td rowspan="{:count($v['paylist'])*2+3}" class="remarks">{$v.contract_remarks}</td>
+                                            <td class="remarks_extra" rowspan="{:count($v['paylist'])*2+3}" colspan="4">{$v.contract_remarks_extra}</td>
+                                        </tr>
+                                        <else />
+                                        <tr>
+                                            <td class="co_id" rowspan="5">{$v.contract_id}</td>
+                                            <td class="edit4" rowspan="5">{$v.contract_name}</td>
+                                            <td class="edit3" rowspan="5">{$v.contract_unit}</td>
+                                            <td class="edit2" rowspan="5">{$v.contract_nature}</td>
+                                            <td class="edit" rowspan="5">{$v.contract_amount}</td>
+                                            <td class="edit" rowspan="5">{$v.contract_exact_amount}</td>
+                                            <td width="70"><b>预付时间1</b></td>
+                                            <td width="80"><b>预付金额1</b></td>
+                                            <td width="60"><b>预付比例1</b></td>
+                                            <td rowspan="5" class="remarks">{$v.contract_remarks}</td>
+                                            <td class="remarks_extra" rowspan="5" colspan="4">{$v.contract_remarks_extra}</td>
+                                        </tr>
+                                    </notempty>
+                                    <tr>
+                                        <notempty name="v['paylist'][0]">
+                                            <td class="edit">{$v['paylist'][0]['pay_time']}</td>
+                                            <td class="edit">{$v['paylist'][0]['pay_amount']}</td>
+                                            <td class="edit">{$v['paylist'][0]['ratio']}</td>
+                                            <else />
+                                            <td class="edit">-</td>
+                                            <td class="edit">-</td>
+                                            <td class="edit">-</td>
+                                        </notempty>
+                                    </tr>
+                                    <volist name="v['paylist']" id="vo" offset="1">
+                                        <tr>
+                                            <td><b>预付时间{$key+1}</b></td>
+                                            <td><b>预付金额{$key+1}</b></td>
+                                            <td><b>预付比例{$key+1}</b></td>
+                                        </tr>
+                                        <tr>
+                                            <notempty name="vo">
+                                                <td class="edit">{$vo.pay_time}</td>
+                                                <td class="edit">{$vo.pay_amount}</td>
+                                                <td class="edit">{$vo.ratio}</td>
+                                                <else />
+                                                <td class="edit">-</td>
+                                                <td class="edit">-</td>
+                                                <td class="edit">-</td>
+                                            </notempty>
+                                        </tr>
+                                    </volist>
+                                    <tr>
+                                        <td><b>累计预付</b></td>
+                                        <notempty name="v.contract_add_money">
+                                            <td class="edit" colspan="2">{$v.contract_add_money}</td>
+                                            <else />
+                                            <td class="edit" colspan="2">-</td>
+                                        </notempty>
+                                    </tr>
+                                    <tr>
+                                        <td><b>余额</b></td>
+                                        <notempty name="v.contract_balance">
+                                            <td class="edit" colspan="2">{$v.contract_balance}</td>
+                                            <else />
+                                            <td class="edit" colspan="2">-</td>
+                                        </notempty>
+                                    </tr>
+                                    <tr>
+                                        <td><b>余额占比</b></td>
+                                        <notempty name="v.contract_balance">
+                                            <td class="edit" colspan="2">{$v.ratio}</td>
+                                            <else />
+                                            <td class="edit" colspan="2">-</td>
+                                        </notempty>
+                                    </tr>
+                                </tbody>
+                            </if>
+                        </foreach>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </section>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    window.onload = function() //用window的onload事件，窗体加载完毕的时候
+    {
+        if (localStorage.getItem("flag") == 0) {
+            var toppx = localStorage.getItem('toppx');
+            $(".Hui-article").scrollTop(toppx);
+            localStorage.removeItem('flag');
+        } else if (localStorage.getItem("flag") == 1) {
+            var toppx = $('.Hui-article')[0].scrollHeight;
+            $(".Hui-article").scrollTop(toppx);
+            localStorage.removeItem('flag');
+        }
+    }
+    /*记录滚动条*/
+    function note(){
+        var res = $('.Hui-article').scrollTop();
+        localStorage.setItem('toppx', res);
+    }
+    /*付款-编辑*/
+    function list_edit(title, url, w, h) {
+        note();
+        layer_show(title, url, w, h);
+    }
+    $(".edit").click(function() {
+        note();
+        var contract_id = $(this).parent().parent().find('.co_id').text();
+        var string = '__MODULE__/Before/list_edit' + '?contract_id=' + contract_id;
+        list_edit('付款情况', string, '', '510');
+    });
+    $(".edit1").click(function() {
+        note();
+        var contract_id = $(this).parent().parent().find('.co_id').text();
+        var string = '__MODULE__/Before/extra_edit' + '?contract_id=' + contract_id;
+        list_edit('招标费用情况', string, '', '420');
+    });
+    $(".edit2").click(function() {
+        note();
+        var contract_id = $(this).parent().parent().find('.co_id').text();
+        var string = '__MODULE__/Before/nature_edit' + '?contract_id=' + contract_id;
+        list_edit('合同性质', string, '400', '200');
+    });
+    $(".edit3").click(function() {
+        note();
+        var contract_id = $(this).parent().parent().find('.co_id').text();
+        var string = '__MODULE__/Before/unit_edit' + '?contract_id=' + contract_id;
+        list_edit('承包单位', string, '400', '200');
+    });
+    $(".edit4").click(function() {
+        note();
+        var contract_id = $(this).parent().parent().find('.co_id').text();
+        var string = '__MODULE__/Before/name_edit' + '?contract_id=' + contract_id;
+        list_edit('项目名称', string, '600', '200');
+    });
+    $(".remarks").click(function() {
+        note();
+        var contract_id = $(this).parent().find('.co_id').text();
+        var string = '__MODULE__/Before/list_editremark' + '?contract_id=' + contract_id;
+        list_edit('备注', string, '', '300');
+    });
+    $(".remarks_extra").click(function() {
+        note();
+        var contract_id = $(this).parent().parent().find('.co_id').text();
+        var string = '__MODULE__/Before/list_editextra' + '?contract_id=' + contract_id;
+        list_edit('额外备注', string, '', '300');
+    });
+    $(".btn_end").click(function() {
+        var item_id = $(this).attr('item_id');
+        $.ajax({
+            type: "POST",
+            url: "__CONTROLLER__/list_end",
+            data: "item_id=" + item_id,
+            success: function(data) {
+                var obj = eval('(' + data + ')');
+                if (obj.result == '400') {
+                    alert("结束失败！");
+                } else if (obj.result == '200') {
+                    alert("项目还原！");
+                    window.location.reload();
+                }
+            }
+        });
+    });
+    /*添加总表*/
+    function list_add(title, url, id, w, h) {
+        layer_show(title, url, w, h);
+    }
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<include file="Public/_meta" />
+
+<body>
+    <article class="cl pd-20 va-m">
+        <div class="form form-horizontal" id="pay">
+            <table class="table table-border table-bordered table-hover table-bg">
+                <div class="cooid" contract_id="{$data.contract_id}" style="display: none;"></div>
+                <thead>
+                    <th width="">额外备注</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <textarea name="contract_remarks_extra" cols="" rows="" class="remarks2 textarea" placeholder="备注" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="textarealength(this,500)">{$data.contract_remarks_extra}</textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row cl">
+                <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                    <span class="btn btn-danger radius f-r quxiao" style="width: 100px; margin-left: 20px;">取消</span>
+                    <span class="btn btn-success radius f-r baochun" style="width: 100px;">&nbsp;&nbsp;提交&nbsp;&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </article>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+   	$('input:not([autocomplete]').attr('autocomplete', 'off'); 
+    $(".quxiao").click(function() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    })
+    $(".baochun").click(function() {
+        var contract_id = $(".cooid").attr("contract_id");
+        var contract_remarks_extra = $(".remarks2").val();
+    	$.ajax({
+            type: "POST",
+            url: "__CONTROLLER__/list_edit3",
+            data: "contract_id=" + contract_id + "&contract_remarks_extra=" + contract_remarks_extra,  
+            success: function(data) {
+                var obj = eval('(' + data+ ')');
+                if(obj.result == '400'){
+                    alert("保存出错！");
+                }else if(obj.result == '200'){
+                    localStorage.setItem('flag', 0);
+                    window.parent.location.reload();
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                }
+            }
+        });
+    })
+    
+    // //传item_id 打印该分表
+    // //
+    // //传item_id 到控制器list_end 结束该项项目
+    // $.ajax({
+    //         type: "POST",
+    //         url: "__CONTROLLER__/list_end", //list_edit3将传进去的contract_remarks 保存
+    //         data: "item_id=" + item_id, 
+    //         success: function(data) {
+
+    //         }
+    // });
+    // //传contract_id 到控制器list_edit2 取contract_remarks 存到data里面 显示
+    // $.ajax({
+    //         type: "POST",
+    //         url: "__CONTROLLER__/list_edit3", //list_edit3将传进去的contract_remarks 保存
+    //         data: "contract_id=" + contract_id + "&contract_remarks=" + contract_remarks, 
+    //         success: function(data) {
+
+    //         }
+    // });
+    // //传contract_id 到控制器list_edit4 取contract_remarks_extra 存到data里面 显示
+    // $.ajax({
+    //         type: "POST",
+    //         url: "__CONTROLLER__/list_edit5", //list_edit4将传进去的contract_remarks_extra 保存
+    //         data: "contract_id=" + contract_id + "&contract_remarks_extra=" + contract_remarks_extra,  
+    //         success: function(data) {
+
+    //         }
+    //     });
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

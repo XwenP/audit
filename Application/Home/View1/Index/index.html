@@ -1,0 +1,171 @@
+﻿<include file="Public/_meta" />
+
+<body>
+    <include file="Public/_header" />
+    <!--_menu 作为公共模版分离出去-->
+    <aside class="Hui-aside">
+        <div class="menu_dropdown bk_2">
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe636;</i> 总表管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd style="display: block;">
+                    <ul>
+                        <li class="current"><a href="__MODULE__/Index/index?" title="{$count_year}年合同总表">{$count_year}年工程项目合同付款登记表</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe623;</i> 分表管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <foreach name="item_list" item="v">
+                            <li><a href="__MODULE__/Index/list_show?item_id={$v.item_id}" title="{$v.item_name}">{$v.item_name}</a></li>
+                        </foreach>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe70c;</i> 预付记录管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <foreach name="time_list" item="v">
+                            <if condition="$v eq $count_year">
+                                <li class="current"><a href="__MODULE__/Index/pay_show?year={$v}" title="{$v}年付款记录表">{$v}年付款记录表</a></li>
+                                <else />
+                                <li><a href="__MODULE__/Index/pay_show?year={$v}" title="{$v}年付款记录表">{$v}年付款记录表</a></li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </aside>
+    <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> {$count_year}年工程项目合同付款登记表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <div class="cl pd-5 bg-1 bk-gray mt-10">
+                    <span class="l">
+                        <a href="javascript:;" onclick="context_add('添加合同','__MODULE__/Index/context_add?year={$count_year}')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加合同</a>
+                        <a href="__MODULE__/Index/test2?year={$count_year}" class="btn btn-success radius"><i class="Hui-iconfont">&#xe644;</i> 导出总表</a>
+                    </span>
+                    <span class="r">共有数据：<strong>{$count_num}</strong> 条</span>
+                </div>
+                <div class="mt-20">
+                    <table class="table table-border table-bordered table-hover table-bg table-sort">
+                        <thead>
+                            <tr class="text-c">
+                                <th width="60">序号</th>
+                                <th width="100">合同名称</th>
+                                <th width="100">承包单位</th>
+                                <th width="80">项目名称</th>
+                                <th width="60">投资监理</th>
+                                <th width="60">合同性质</th>
+                                <th width="60">合同金额</th>
+                                <th width="80" style="white-space: nowrap;">合同流转日期</th>
+                                <th width="80">累计预付款</th>
+                                <th width="80">余额</th>
+                                <th width="">合同付款方式（备注）</th>
+                                <th width="80">操作</th>
+                            </tr>
+                        </thead>
+                        <notempty name="contract">
+                            <tbody>
+                                <foreach name="contract" item="v">
+                                    <tr>
+                                        <td class="text-c">{$v.contract_id}</td>
+                                        <td>{$v.contract_name}</td>
+                                        <td>{$v.contract_unit}</td>
+                                        <td>{$v['item']['item_name']}</td>
+                                        <td>{$v.item_supervisor}</td>
+                                        <td>{$v.contract_nature}</td>
+                                        <td class="text-c">{$v.contract_amount}</td>
+                                        <td>{$v.contract_date}</td>
+                                        <td class="text-c">{$v.contract_add_money}</td>
+                                        <td class="text-c">{$v.contract_balance}</td>
+                                        <td>{$v.contract_remarks}</td>
+                                        <td class="text-c">
+                                            <a style="text-decoration:none" onClick="context_edit('合同编辑','__MODULE__/Index/context_edit?id={$v.id}')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                        </notempty>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </section>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    window.onload = function() //用window的onload事件，窗体加载完毕的时候
+    {
+        if(localStorage.getItem("flag") == 0){
+            var toppx = localStorage.getItem('toppx');
+            $(".Hui-article").scrollTop(toppx);
+            localStorage.removeItem('flag');
+        }else if(localStorage.getItem("flag") == 1){
+            var toppx = $('.Hui-article')[0].scrollHeight;
+            $(".Hui-article").scrollTop(toppx);
+            localStorage.removeItem('flag');
+        }
+    }
+    // $(document).ready(function(){
+    //     $('.Hui-article').scroll(function(){
+    //         var res = $(this).scrollTop();
+    //         console.log(res + "px");
+    //     });
+    // });
+    $(function() {
+        $('.table-sort').dataTable({
+            'paging':false,
+            "ordering": false,
+            "bStateSave": false, //状态保存
+            "aoColumnDefs": [
+                // {"bVisible": false, "aTargets": [ 1 ]} ,//控制列的隐藏显示
+                { "orderable": false, "aTargets": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] } // 制定列不参与排序
+            ]
+        });
+        $('.table-sort tbody').on('click', 'tr', function() {
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            } else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        });
+    });
+    /*记录滚动条*/
+    function note(){
+        var res = $('.Hui-article').scrollTop();
+        localStorage.setItem('toppx', res);
+    }
+    /*合同-添加*/
+    function context_add(title, url) {
+        note();
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+    /*合同-添加*/
+    function context_edit(title, url) {
+        note();
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+    /*添加总表*/
+    function list_add(title, url, id, w, h) {
+        layer_show(title, url, w, h);
+    }
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

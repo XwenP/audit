@@ -1,0 +1,51 @@
+<include file="Public/_meta" />
+</head>
+
+<body>
+    <article class="cl pd-20">
+        <div class="form form-horizontal" id="form-change-password">
+            <div class="cooid" contract_id="{$data.contract_id}" style="display: none;"></div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-1"><strong>承包单位：</strong></label>
+                <div class="formControls col-xs-8 col-sm-10">
+                    <input type="text" class="input-text" value="{$data.contract_unit}" placeholder="" id="" name="contract_unit">
+                </div>
+            </div>
+            <div class="row cl">
+                <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                    <button id="quxiao" class="btn btn-default radius f-r" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                    <button class="submit btn btn-primary radius f-r" style="margin-right: 10px;" type="button">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    var index = parent.layer.getFrameIndex(window.name); //获取当前窗体索引
+    $('#quxiao').on('click', function() {
+        parent.layer.close(index); //执行关闭
+    });
+    $(".submit").on('click', function() {
+        var contract_id = $(".cooid").attr("contract_id");
+        var contract_unit = $("input[name='contract_unit']").val();
+        $.ajax({
+            type: "POST",
+            url: "__CONTROLLER__/unit_save",
+            data: "contract_id=" + contract_id + "&contract_unit=" + contract_unit,
+            success: function(data) {
+                var obj = eval('(' + data + ')');
+                if (obj.result == '400') {
+                    alert("保存出错！");
+                } else if (obj.result == '200') {
+                    localStorage.setItem('flag', 0);
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+                }
+            }
+        });
+    })
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

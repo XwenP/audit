@@ -1,0 +1,126 @@
+﻿<include file="Public/_meta" />
+
+<body>
+    <include file="Public/_header" />
+    <!--_menu 作为公共模版分离出去-->
+    <aside class="Hui-aside">
+        <div class="menu_dropdown bk_2">
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe636;</i> 总表管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <foreach name="time_list" item="v">
+                            <if condition="$v eq $count_year">
+                                <li class="current"><a href="__MODULE__/Index/index?year={$v}" title="{$v}年合同总表">{$v}年工程项目合同付款登记表</a></li>
+                                <else />
+                                <li><a href="__MODULE__/Index/index?year={$v}" title="{$v}年合同总表">{$v}年工程项目合同付款登记表</a></li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe623;</i> 分表管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd>
+                    <ul>
+                        <foreach name="item_list" item="v">
+                            <li><a href="__MODULE__/Index/list_show?item_id={$v.item_id}" title="{$v.item_name}">{$v.item_name}</a></li>
+                        </foreach>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="Hui-iconfont">&#xe70c;</i> 预付记录管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+                <dd style="display: block;">
+                    <ul>
+                        <foreach name="time_list" item="v">
+                            <if condition="$v eq $count_year">
+                                <li class="current"><a href="__MODULE__/Index/pay_show?year={$v}" title="{$v}年付款记录表">{$v}年付款记录表</a></li>
+                                <else />
+                                <li><a href="__MODULE__/Index/pay_show?year={$v}" title="{$v}年付款记录表">{$v}年付款记录表</a></li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </aside>
+    <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> {$count_year}年付款信息记录表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <div class="cl pd-5 bg-1 bk-gray mt-10">
+                    <span class="l">
+                        <a href="__MODULE__/Index/audit_out_4?year={$count_year}" class="btn btn-success radius"><i class="Hui-iconfont">&#xe644;</i> 导出表格</a>
+                    </span>
+                    <span class="r">共有数据：<strong>{$count_num}</strong> 条</span>
+                </div>
+                <div class="mt-20">
+                    <table class="table table-border table-bordered table-hover table-bg table-sort">
+                        <thead>
+                            <tr class="text-c">
+                                <th width="60">序号</th>
+                                <th width="80">付款日期</th>
+                                <th width="80">合同编号</th>
+                                <th width="100">项目名称</th>
+                                <th width="100">承包单位</th>
+                                <th width="60">投资监理</th>
+                                <th width="80">合同金额</th>
+                                <th width="80">付款金额</th>
+                                <th width="80">累计预付款</th>
+                                <th width="80">余额</th>
+                            </tr>
+                        </thead>
+                        <notempty name="contract">
+                            <tbody>
+                                <foreach name="contract" item="v">    
+                                    <tr>
+                                        <td class="text-c">{$key+1}</td>
+                                        <td>{$v.pay_time}</td>
+                                        <td>{$v.contract_id}</td>
+                                        <td>{$v.contract_name}</td>
+                                        <td>{$v.contract_unit}</td>
+                                        <td>{$v.item_supervisor}</td>
+                                        <td class="text-c">{$v.contract_amount}</td>
+                                        <td>{$v.pay_amount}</td>
+                                        <td class="text-c">{$v.contract_add_money}</td>
+                                        <td class="text-c">{$v.contract_balance}</td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                        </notempty>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </section>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    /*合同-添加*/
+    function context_add(title, url) {
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+    /*合同-添加*/
+    function context_edit(title, url) {
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+    /*添加总表*/
+    function list_add(title, url, id, w, h) {
+        layer_show(title, url, w, h);
+    }
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

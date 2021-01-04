@@ -1,0 +1,109 @@
+<include file="Public/_meta" />
+
+<body>
+    <article class="cl pd-20 va-m">
+        <table class="table table-border table-bordered table-hover table-bg table-sort">
+            <div class="cooid" contract_id="{$data.contract_id}" style="display: none;"></div>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h5><strong>招标代理</strong></h5>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-c">总投资金额</td>
+                    <td><input type="text" class="input-text size-S" value="{$data.total_invest}" placeholder="-" name="total_invest"></td>
+                </tr>
+                <tr>
+                    <td class="text-c">建安费</td>
+                    <td><input type="text" class="input-text size-S" value="{$data.jian_fee}" placeholder="-" name="jian_fee"></td>
+                </tr>
+                <tr>
+                    <td class="text-c">预算金额</td>
+                    <td><input type="text" class="input-text size-S" value="{$data.budget_amount}" placeholder="-" name="budget_amount"></td>
+                </tr>
+                <tr>
+                    <td class="text-c">控制价</td>
+                    <td><input type="text" class="input-text size-S" value="{$data.limit_price}" placeholder="-" name="limit_price"></td>
+                </tr>
+                <tr>
+                    <td class="text-c">招标项目类别：</td>
+                    <td><input type="text" class="input-text size-S" value="{$data.item_type}" placeholder="-" name="item_type"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row cl mt-20">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <span class="btn btn-danger radius f-r quxiao" style="width: 100px; margin-left: 20px;">取消</span>
+                <span class="btn btn-success radius f-r baochun" style="width: 100px;">&nbsp;&nbsp;提交&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </article>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    $('input:not([autocomplete]').attr('autocomplete', 'off');
+    $(".quxiao").click(function() {
+        var index = parent.layer.getFrameIndex(window.name);
+        parent.layer.close(index);
+    })
+    $(".baochun").click(function() {
+        var contract_id = $(".cooid").attr("contract_id");
+        var total_invest = $("input[name='total_invest']").val();
+        var jian_fee = $("input[name='jian_fee']").val();
+        var budget_amount = $("input[name='budget_amount']").val();
+        var limit_price = $("input[name='limit_price']").val();
+        var item_type = $("input[name='item_type']").val();
+        $.ajax({
+            type: "POST",
+            url: "__CONTROLLER__/extra_save",
+            data: "contract_id=" + contract_id + "&total_invest=" + total_invest + "&jian_fee=" + jian_fee + "&budget_amount=" + budget_amount + "&limit_price=" + limit_price + "&item_type=" + item_type,
+            success: function(data) {
+                var obj = eval('(' + data + ')');
+                if (obj.result == '400') {
+                    alert("保存出错！");
+                } else if (obj.result == '200') {
+                    localStorage.setItem('flag', 0);
+                    window.parent.location.reload();
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                }
+            }
+        });
+    })
+
+    // //传item_id 打印该分表
+    // //
+    // //传item_id 到控制器list_end 结束该项项目
+    // $.ajax({
+    //         type: "POST",
+    //         url: "__CONTROLLER__/list_end", //list_edit3将传进去的contract_remarks 保存
+    //         data: "item_id=" + item_id, 
+    //         success: function(data) {
+
+    //         }
+    // });
+    // //传contract_id 到控制器list_edit2 取contract_remarks 存到data里面 显示
+    // $.ajax({
+    //         type: "POST",
+    //         url: "__CONTROLLER__/list_edit3", //list_edit3将传进去的contract_remarks 保存
+    //         data: "contract_id=" + contract_id + "&contract_remarks=" + contract_remarks, 
+    //         success: function(data) {
+
+    //         }
+    // });
+    // //传contract_id 到控制器list_edit4 取contract_remarks_extra 存到data里面 显示
+    // $.ajax({
+    //         type: "POST",
+    //         url: "__CONTROLLER__/list_edit5", //list_edit4将传进去的contract_remarks_extra 保存
+    //         data: "contract_id=" + contract_id + "&contract_remarks_extra=" + contract_remarks_extra,  
+    //         success: function(data) {
+
+    //         }
+    //     });
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

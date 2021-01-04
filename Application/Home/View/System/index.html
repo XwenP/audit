@@ -1,0 +1,88 @@
+﻿<include file="Public/_meta" />
+
+<body>
+    <include file="Public/_header" />
+    <!--_menu 作为公共模版分离出去-->
+    <aside class="Hui-aside">
+        <div class="menu_dropdown bk_2">
+            <dl>
+                <dt><a href="__MODULE__/System/index" style="text-decoration:none; color:#148cf1;"><i class="Hui-iconfont">&#xe72d;&nbsp;</i> 分表项目管理</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="__MODULE__/System/checker" style="text-decoration:none;"><i class="Hui-iconfont">&#xe62d;&nbsp;</i> 审核员管理</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="__MODULE__/System/admin" style="text-decoration:none;"><i class="Hui-iconfont">&#xe62b;&nbsp;</i> 管理员账号管理</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="__MODULE__/System/typist" style="text-decoration:none;"><i class="Hui-iconfont">&#xe70c;&nbsp;</i> 打字员管理</a></dt>
+            </dl>
+        </div>
+    </aside>
+    <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 系统管理 <span class="c-gray en">&gt;</span> 分表项目管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+        <div class="Hui-article">
+            <article class="cl pd-20">
+                <div class="cl pd-5 bg-1 bk-gray mt-10">
+                    <span class="l">
+                        <a href="javascript:;" onclick="list_add('添加分表','__MODULE__/Index/list_add','','400','280')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe644;</i> 添加合同分表</a>
+                    </span>
+                    <span class="r">共有数据：<strong>{:count($data)}</strong> 条</span>
+                </div>
+                <div class="mt-20">
+                    <table class="table table-border table-bordered table-hover table-bg table-sort">
+                        <thead>
+                            <tr class="text-c">
+                                <th width="30">合同分表</th>
+                                <th width="80">投资监理单位</th>
+                                <th width="80">投资监理</th>
+                                <th width="80">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <foreach name="data" item="v">
+                            <tr class="text-c">
+                                <td>{$v.item_name}</td>
+                                <td>{$v.su_company}</td>
+                                <td>{$v.item_supervisor}</td>
+                                <td class="td-manage">
+                                    <a title="编辑" href="javascript:;" onclick="list_add('编辑分表','__MODULE__/System/item_edit?item_id={$v.item_id}','','400','300')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                                </td>
+                            </tr>
+                            </foreach>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </section>
+    <include file="Public/_footer" />
+    <script type="text/javascript">
+    /*项目-添加*/
+    function program_add(title, url) {
+        var index = layer.open({
+            type: 2,
+            title: title,
+            content: url
+        });
+        layer.full(index);
+    }
+    /*付款-编辑*/
+    function list_edit(title, url, w, h) {
+        layer_show(title, url, w, h);
+    }
+    $(".edit").click(function() {
+        var contract_id = $(this).parent().parent().find('.co_id').text();
+        var string = '__MODULE__/Index/list_edit' + '?contract_id=' + contract_id;
+        list_edit('付款情况', string, '', '510');
+    });
+    /*添加总表*/
+    function list_add(title, url, id, w, h) {
+        layer_show(title, url, w, h);
+    }
+    </script>
+    <!--/请在上方写此页面业务相关的脚本-->
+</body>
+
+</html>

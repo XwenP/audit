@@ -1,0 +1,60 @@
+<include file="Public/_meta" />
+</head>
+<body>
+<article class="cl pd-20">
+	<div class="form form-horizontal" id="form-change-password">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">添加分表:</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" autocomplete="off" placeholder="输入分表名" name="item_name" id="item_name">
+			</div>
+		</div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">投资监理单位:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" autocomplete="off" placeholder="输入项目监理单位" name="su_company" id="su_company">
+            </div>
+        </div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">项目监理:</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" autocomplete="off" placeholder="输入项目监理名" name="item_supervisor" id="item_supervisor">
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				<button id="quxiao" class="btn btn-default radius f-r" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+				<button class="submit btn btn-primary radius f-r" type="button" style="margin-right: 10px;">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</div>
+</article>
+<include file="Public/_footer" />
+<script type="text/javascript">
+    var index = parent.layer.getFrameIndex(window.name); //获取当前窗体索引
+    $('#quxiao').on('click', function(){
+        parent.layer.close(index); //执行关闭
+    });
+    $(".submit").on('click',function(){
+    	var item_name = $("input[name='item_name']").val();
+    	var item_supervisor = $("input[name='item_supervisor']").val();
+        var su_company = $("input[name='su_company']").val();
+    	$.ajax({
+            type: "POST",
+            url: "__CONTROLLER__/item_add",
+            data: "item_name=" + item_name + "&item_supervisor=" + item_supervisor + "&su_company=" + su_company,  
+            success: function(data) {
+            	var obj = eval('(' + data+ ')');
+            	if(obj.result == '400'){
+            		alert("分表名重复！");
+            	}else if(obj.result == '200'){
+                    window.parent.location.reload();
+                    parent.layer.close(index);
+            	}
+            }
+        });
+    })
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
